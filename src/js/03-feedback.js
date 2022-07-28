@@ -39,7 +39,7 @@ function onTextareaInput() {
 
 function populateTextarea() {
   const saveMassage = localStorage.getItem(STORAGE_KEY);
-  const saveAllMassage = JSON.stringify(saveMassage);
+  const saveAllMassage = JSON.parse(saveMassage);
   if (saveMassage) {
     refs.input.value = saveAllMassage.email;
     refs.textarea.value = saveAllMassage.message;
