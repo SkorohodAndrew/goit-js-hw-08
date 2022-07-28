@@ -1,2 +1,0 @@
-const e={form:document.querySelector(".feedback-form"),input:document.querySelector("input"),textarea:document.querySelector("textarea")};function t(e){const t=e.target.value;localStorage.setItem("feedback-form-state",t)}e.form.addEventListener("submit",(function(e){e.preventDefault(),e.currentTarget.reset(),console.log("відправити форму")})),e.input.addEventListener("input",t),e.input.addEventListener("input",t),function(e){const t=localStorage.getItem("feedback-form-state");console.log(t)}();
-//# sourceMappingURL=03-feedback.8d793720.js.map
